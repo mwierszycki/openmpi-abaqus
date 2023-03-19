@@ -105,7 +105,7 @@ Total                     803.29         1295.91         2099.20
 ```
 The data bandwidth between socket 0 and memory in node 1 and vice versa is significantly slower than between sockets and memory in the same NUMA nodes whats decreases performance by ~10% in this case (Abaqus benchmark job s4d).
 
-If you use OpenMPI with Abaqus, feel free to share your experience with other Abaqus users.
+If you use OpenMPI with Abaqus, feel free to [share your experience](https://github.com/mwierszycki/openmpi-abaqus/discussions) with other Abaqus users.
 
 Happy running Abaqus jobs in parallel with OpenMPI on Linux!
 
