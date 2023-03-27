@@ -29,7 +29,7 @@ rebuild RPM package and install it:
 
 ```
 $ wget https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.7-1.src.rpm
-$ sudo rpmbuild –rebuild openmpi-4.0.7-1.src.rpm
+$ sudo rpmbuild --rebuild openmpi-4.0.7-1.src.rpm
 $ yum localinstall -y /root/rpmbuild/RPMS/x86_64/openmpi-4.0.7-1.el7.x86_64.rpm
 ```
 
