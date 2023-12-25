@@ -4,6 +4,7 @@ In the latest Abaqus releases the default MPI implementation is the IBM Platfrom
 
 | Abaqus | OpenMPI |
 |--------|---------|
+|2024    |[4.0.7](https://www.open-mpi.org/software/ompi/v4.0/)|
 |2023    |[4.0.7](https://www.open-mpi.org/software/ompi/v4.0/)|
 |2022    |[4.0.7](https://www.open-mpi.org/software/ompi/v4.0/)|
 
