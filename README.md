@@ -4,10 +4,13 @@ In the latest Abaqus releases the default MPI implementation is the IBM Platfrom
 
 | Abaqus | OpenMPI |
 |--------|---------|
+|2025    |[4.1.5](https://www.open-mpi.org/software/ompi/v4.1/)|
+|2024HFx where x >=3 |[4.1.5](https://www.open-mpi.org/software/ompi/v4.1/)|
 |2024    |[4.0.7](https://www.open-mpi.org/software/ompi/v4.0/)|
 |2023    |[4.0.7](https://www.open-mpi.org/software/ompi/v4.0/)|
 |2022    |[4.0.7](https://www.open-mpi.org/software/ompi/v4.0/)|
 
+* - 
 OpenMPI has a few more advantages in contrast to IBM Platform MPI. OpenMPI offers a very straightforward, flexible and efficient approach for process affinity. In general, it is a three stage approach where the process is first mapped to a specific slot, then ranked and finally bound to it. In the case of Abaqus, a user can control the last stage - binding. The Abaqus process and its threads can be bound to a slot, hardware thread (SMT), core, L1 cache, L2 cache, L3 cache, socket, NUMA node or explicitly defined list of cores. In the case of NUMA-based multi-socket machines or modern complex CPUs architecture like AMD EPYC family, the most interesting options are binding to last-level cache (L3 cache) or sockets/numa nodes.
 
 Last but not least, the OpenMPI is seamlessly integrated with the Slurm. There are three different modes how Slurm launches MPI jobs:
@@ -112,4 +115,4 @@ Happy running Abaqus jobs in parallel with OpenMPI on Linux!
 
 ## Disclaimers
 
-Please note that this is an unofficial and undocumented configuration. In the case of any problems DS SIMULIA will not support it.
+Please note that this is an unofficial and undocumented configuration for older Abaqus release. In the case of any problems DS SIMULIA will not support it.
